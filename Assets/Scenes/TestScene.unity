@@ -323,6 +323,18 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 5433311741505107789}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1092647553 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5684632629308536800, guid: 4a69d78ac0717224b87b5aafd4dda51d,
+    type: 3}
+  m_PrefabInstance: {fileID: 5433311741505107789}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1092647552}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed60cf34804399a499dddb5dc6c9f416, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1108214151194817872
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -492,22 +504,12 @@ PrefabInstance:
         type: 3}
       propertyPath: arrow
       value: 
+      objectReference: {fileID: 1092647553}
+    - target: {fileID: 5684632629308536800, guid: 4a69d78ac0717224b87b5aafd4dda51d,
+        type: 3}
+      propertyPath: thisObject
+      value: 
       objectReference: {fileID: 1092647552}
-    - target: {fileID: 5433311741505107795, guid: 4a69d78ac0717224b87b5aafd4dda51d,
-        type: 3}
-      propertyPath: m_Radius
-      value: 0.5198899
-      objectReference: {fileID: 0}
-    - target: {fileID: 5433311741505107795, guid: 4a69d78ac0717224b87b5aafd4dda51d,
-        type: 3}
-      propertyPath: m_Offset.x
-      value: 0.000000059604645
-      objectReference: {fileID: 0}
-    - target: {fileID: 5433311741505107795, guid: 4a69d78ac0717224b87b5aafd4dda51d,
-        type: 3}
-      propertyPath: m_Offset.y
-      value: -0.0015194416
-      objectReference: {fileID: 0}
     - target: {fileID: 6831976506923357686, guid: 4a69d78ac0717224b87b5aafd4dda51d,
         type: 3}
       propertyPath: m_RootOrder

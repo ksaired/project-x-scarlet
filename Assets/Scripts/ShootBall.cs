@@ -9,7 +9,7 @@ public class ShootBall : MonoBehaviour
 
     public Rigidbody2D rb;
     public Camera cam;
-    public GameObject arrow;
+    public ArrowSize arrow;
 
     private Vector2 mousePos; //mouse position
     private Vector2 lookDir;  //look direction
@@ -24,6 +24,7 @@ public class ShootBall : MonoBehaviour
         //arrow.transform.scale.x = 5;
         //arrow.transform.localScale = new Vector3(20, 3, 1);
         //arrow.transform.scale.y = 3;
+        arrow.SetArrowScale(5,3);
     }
 
     // Update is called once per frame
