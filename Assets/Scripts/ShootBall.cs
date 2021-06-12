@@ -9,27 +9,37 @@ public class ShootBall : MonoBehaviour
 
     public Rigidbody2D rb;
     public Camera cam;
-    //public GameObject ball;
+    public ArrowSize arrow;
 
     private Vector2 mousePos; //mouse position
     private Vector2 lookDir;  //look direction
 
     private float shootAngle;
 
+    private bool aimOn = true;  //is the player currently aiming
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        //arrow.transform.scale.x = 5;
+        //arrow.transform.localScale = new Vector3(20, 3, 1);
+        //arrow.transform.scale.y = 3;
+        arrow.SetArrowScale(5,3);
     }
 
     // Update is called once per frame
     void FixedUpdate()
     {
-        mousePos = cam.ScreenToWorldPoint(Input.mousePosition);
+        while (aimOn == true)
+        {
+            mousePos = cam.ScreenToWorldPoint(Input.mousePosition);
 
-        lookDir = mousePos - rb.position;
-        shootAngle = Mathf.Atan2(lookDir.y, lookDir.x) * Mathf.Rad2Deg;
+            lookDir = mousePos - rb.position;
+            shootAngle = Mathf.Atan2(lookDir.y, lookDir.x) * Mathf.Rad2Deg;
 
-        rb.rotation = shootAngle;
+            rb.rotation = shootAngle;
+        }
     }
+
+
 }
